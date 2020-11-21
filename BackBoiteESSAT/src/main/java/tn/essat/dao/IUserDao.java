@@ -9,6 +9,6 @@ import tn.essat.model.Utilisateur;
 @Repository
 public interface IUserDao extends JpaRepository<Utilisateur, Integer>{
 	
-	public List<Utilisateur> findByUsernameAndPassword(String usrername,String password);
+	public List<Utilisateur> findByUsernameAndPassword(String username,String password);
 
 }

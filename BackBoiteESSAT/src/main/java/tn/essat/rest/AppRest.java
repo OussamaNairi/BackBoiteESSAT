@@ -50,7 +50,7 @@ public class AppRest {
 		return daou.findByUsernameAndPassword(username, password);
 		}
 	@GetMapping("/users")
-	public List<Utilisateur> get555(@PathVariable("id") int id){
+	public List<Utilisateur> get555(){
 		return daou.findAll();
 	}
 	@GetMapping("/user/{id}")
