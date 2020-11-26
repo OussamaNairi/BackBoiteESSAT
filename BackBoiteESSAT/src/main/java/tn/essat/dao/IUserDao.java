@@ -10,5 +10,6 @@ import tn.essat.model.Utilisateur;
 public interface IUserDao extends JpaRepository<Utilisateur, Integer>{
 	
 	public List<Utilisateur> findByUsernameAndPassword(String username,String password);
+	public Utilisateur findByUsername(String username);
 
 }

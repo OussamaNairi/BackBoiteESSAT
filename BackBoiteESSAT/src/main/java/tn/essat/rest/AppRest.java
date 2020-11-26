@@ -53,8 +53,8 @@ public class AppRest {
 	public List<Utilisateur> get555(){
 		return daou.findAll();
 	}
-	@GetMapping("/user/{id}")
-	public Optional<Utilisateur> get77(@PathVariable("id") int id){
-		return daou.findById(id);
+	@GetMapping("/user/{username}")
+	public Utilisateur get77(@PathVariable("username") String username) {
+		return daou.findByUsername(username);
 	}
 }
